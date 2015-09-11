@@ -24,6 +24,9 @@
                                 <variation key="widthClass=compact" misplaced="YES">
                                     <rect key="frame" x="151" y="250" width="100" height="100"/>
                                 </variation>
+                                <connections>
+                                    <action selector="recordAudio:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ChK-xn-EIH"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
