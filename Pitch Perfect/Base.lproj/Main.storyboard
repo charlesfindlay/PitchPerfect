@@ -37,9 +37,23 @@
                                     <rect key="frame" x="162" y="400" width="79" height="21"/>
                                 </variation>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tkc-d1-fuc">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="stopButton">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="176" y="530" width="50" height="50"/>
+                                </variation>
+                                <connections>
+                                    <action selector="stopAudio:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Tdt-yG-N1A"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="centerX" secondItem="tkc-d1-fuc" secondAttribute="centerX" id="NzC-LV-ru8"/>
+                            <constraint firstItem="tkc-d1-fuc" firstAttribute="top" secondItem="6pn-L9-tOu" secondAttribute="bottom" constant="109" id="StT-Zj-Rjb"/>
                             <constraint firstItem="6pn-L9-tOu" firstAttribute="top" secondItem="pFt-cQ-Vvu" secondAttribute="bottom" constant="50" id="Usa-cz-TI5"/>
                             <constraint firstAttribute="centerX" secondItem="6pn-L9-tOu" secondAttribute="centerX" id="XrX-OF-FAh"/>
                             <constraint firstAttribute="centerX" secondItem="pFt-cQ-Vvu" secondAttribute="centerX" id="grU-DD-yjX"/>
@@ -49,24 +63,30 @@
                             <mask key="subviews">
                                 <exclude reference="pFt-cQ-Vvu"/>
                                 <exclude reference="6pn-L9-tOu"/>
+                                <exclude reference="tkc-d1-fuc"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="grU-DD-yjX"/>
                                 <exclude reference="n61-nE-vGG"/>
                                 <exclude reference="Usa-cz-TI5"/>
                                 <exclude reference="XrX-OF-FAh"/>
+                                <exclude reference="NzC-LV-ru8"/>
+                                <exclude reference="StT-Zj-Rjb"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="pFt-cQ-Vvu"/>
                                 <include reference="6pn-L9-tOu"/>
+                                <include reference="tkc-d1-fuc"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="grU-DD-yjX"/>
                                 <include reference="n61-nE-vGG"/>
                                 <include reference="Usa-cz-TI5"/>
                                 <include reference="XrX-OF-FAh"/>
+                                <include reference="NzC-LV-ru8"/>
+                                <include reference="StT-Zj-Rjb"/>
                             </mask>
                         </variation>
                     </view>
@@ -80,5 +100,6 @@
     </scenes>
     <resources>
         <image name="microphone" width="100" height="100"/>
+        <image name="stopButton" width="50" height="50"/>
     </resources>
 </document>
