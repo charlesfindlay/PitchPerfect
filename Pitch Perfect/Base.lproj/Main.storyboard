@@ -28,28 +28,45 @@
                                     <action selector="recordAudio:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ChK-xn-EIH"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recording" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6pn-L9-tOu">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="162" y="400" width="79" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="6pn-L9-tOu" firstAttribute="top" secondItem="pFt-cQ-Vvu" secondAttribute="bottom" constant="50" id="Usa-cz-TI5"/>
+                            <constraint firstAttribute="centerX" secondItem="6pn-L9-tOu" secondAttribute="centerX" id="XrX-OF-FAh"/>
                             <constraint firstAttribute="centerX" secondItem="pFt-cQ-Vvu" secondAttribute="centerX" id="grU-DD-yjX"/>
                             <constraint firstAttribute="centerY" secondItem="pFt-cQ-Vvu" secondAttribute="centerY" id="n61-nE-vGG"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="pFt-cQ-Vvu"/>
+                                <exclude reference="6pn-L9-tOu"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="grU-DD-yjX"/>
                                 <exclude reference="n61-nE-vGG"/>
+                                <exclude reference="Usa-cz-TI5"/>
+                                <exclude reference="XrX-OF-FAh"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="pFt-cQ-Vvu"/>
+                                <include reference="6pn-L9-tOu"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="grU-DD-yjX"/>
                                 <include reference="n61-nE-vGG"/>
+                                <include reference="Usa-cz-TI5"/>
+                                <include reference="XrX-OF-FAh"/>
                             </mask>
                         </variation>
                     </view>
