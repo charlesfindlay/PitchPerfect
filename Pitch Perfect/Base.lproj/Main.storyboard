@@ -82,6 +82,7 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="recordButton" destination="pFt-cQ-Vvu" id="0QN-hl-j52"/>
                         <outlet property="recordingInProgress" destination="6pn-L9-tOu" id="KHu-Md-7xN"/>
                         <outlet property="stopButton" destination="tkc-d1-fuc" id="5kU-eM-ZYe"/>
                     </connections>
