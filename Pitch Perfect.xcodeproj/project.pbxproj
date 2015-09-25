@@ -13,6 +13,7 @@
 		3F31DCC81BA266B600B59646 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F31DCC71BA266B600B59646 /* Images.xcassets */; };
 		3F31DCCB1BA266B600B59646 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F31DCC91BA266B600B59646 /* LaunchScreen.xib */; };
 		3F31DCD71BA266B600B59646 /* Pitch_PerfectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F31DCD61BA266B600B59646 /* Pitch_PerfectTests.swift */; };
+		3F3806281BB4E3E400F61721 /* PlaySoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3806271BB4E3E400F61721 /* PlaySoundsViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		3F31DCD01BA266B600B59646 /* Pitch PerfectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pitch PerfectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F31DCD51BA266B600B59646 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F31DCD61BA266B600B59646 /* Pitch_PerfectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pitch_PerfectTests.swift; sourceTree = "<group>"; };
+		3F3806271BB4E3E400F61721 /* PlaySoundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySoundsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				3F31DCC01BA266B600B59646 /* AppDelegate.swift */,
+				3F3806271BB4E3E400F61721 /* PlaySoundsViewController.swift */,
 				3F31DCC21BA266B600B59646 /* ViewController.swift */,
 				3F31DCC41BA266B600B59646 /* Main.storyboard */,
 				3F31DCC71BA266B600B59646 /* Images.xcassets */,
@@ -214,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F31DCC31BA266B600B59646 /* ViewController.swift in Sources */,
+				3F3806281BB4E3E400F61721 /* PlaySoundsViewController.swift in Sources */,
 				3F31DCC11BA266B600B59646 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
