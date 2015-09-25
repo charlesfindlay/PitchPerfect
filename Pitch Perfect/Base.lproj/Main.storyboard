@@ -44,7 +44,6 @@
                                 </state>
                                 <connections>
                                     <action selector="stopAudio:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Tdt-yG-N1A"/>
-                                    <segue destination="cfS-us-C6O" kind="push" id="lZq-zE-ehm"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -64,6 +63,7 @@
                         <outlet property="recordButton" destination="pFt-cQ-Vvu" id="0QN-hl-j52"/>
                         <outlet property="recordingInProgress" destination="6pn-L9-tOu" id="KHu-Md-7xN"/>
                         <outlet property="stopButton" destination="tkc-d1-fuc" id="5kU-eM-ZYe"/>
+                        <segue destination="cfS-us-C6O" kind="push" identifier="stopRecording" id="nsQ-PY-dUm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -134,7 +134,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iva-Oz-wYe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="740.79999999999995" y="336.06666666666666"/>
+            <point key="canvasLocation" x="808" y="336"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Oky-OB-Sov">
@@ -152,7 +152,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RJV-Fi-D6Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="11.199999999999999" y="336.06666666666666"/>
+            <point key="canvasLocation" x="-37" y="336"/>
         </scene>
     </scenes>
     <resources>
