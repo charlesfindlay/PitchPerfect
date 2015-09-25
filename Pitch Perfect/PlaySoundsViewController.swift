@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class PlaySoundsViewController: UIViewController {
 
@@ -14,6 +15,17 @@ class PlaySoundsViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        if var filePath = NSBundle.mainBundle().pathForResource("movie_quote", ofType: "mp3") {
+            var filePathUrl = NSURL.fileURLWithPath(filePath)
+            var audioPlayer = try? AVAudioPlayer(contentsOfURL: filePathUrl)
+            
+        } else {
+            
+        }
+        
+        
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,6 +34,7 @@ class PlaySoundsViewController: UIViewController {
     }
     
     @IBAction func playSlow(sender: AnyObject) {
+        //code to play audio slowly here....
     }
 
     
