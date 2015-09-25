@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Record-->
@@ -105,23 +106,51 @@
                     <view key="view" contentMode="scaleToFill" id="bKd-BC-NTo">
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xrm-wC-w5J">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xrm-wC-w5J">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="52" y="148" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="105" id="PSk-lJ-ANb"/>
+                                    <constraint firstAttribute="height" constant="105" id="db2-en-oir"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="slow"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="PSk-lJ-ANb"/>
+                                        <exclude reference="db2-en-oir"/>
+                                    </mask>
                                 </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="PSk-lJ-ANb"/>
+                                        <include reference="db2-en-oir"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="playSlow:" destination="cfS-us-C6O" eventType="touchUpInside" id="6Bw-t4-dgh"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xrm-wC-w5J" firstAttribute="top" secondItem="w1f-Ch-PQF" secondAttribute="bottom" constant="58" id="ujJ-Z2-4zd"/>
+                            <constraint firstItem="xrm-wC-w5J" firstAttribute="leading" secondItem="bKd-BC-NTo" secondAttribute="leadingMargin" constant="30" id="yhP-AD-Fd5"/>
+                        </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="xrm-wC-w5J"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="ujJ-Z2-4zd"/>
+                                <exclude reference="yhP-AD-Fd5"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="xrm-wC-w5J"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="ujJ-Z2-4zd"/>
+                                <include reference="yhP-AD-Fd5"/>
                             </mask>
                         </variation>
                     </view>
@@ -151,6 +180,7 @@
     </scenes>
     <resources>
         <image name="microphone" width="100" height="100"/>
+        <image name="slow" width="100" height="100"/>
         <image name="stopButton" width="50" height="50"/>
     </resources>
 </document>
