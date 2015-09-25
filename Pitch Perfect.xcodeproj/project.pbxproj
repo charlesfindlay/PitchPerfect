@@ -156,6 +156,7 @@
 		3F31DCB31BA266B500B59646 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "Charles Findlay";
 				TargetAttributes = {
@@ -409,6 +410,7 @@
 				3F31DCDC1BA266B600B59646 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F31DCDD1BA266B600B59646 /* Build configuration list for PBXNativeTarget "Pitch PerfectTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +419,7 @@
 				3F31DCDF1BA266B600B59646 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
