@@ -68,7 +68,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="388.80000000000001" y="336.06666666666666"/>
+            <point key="canvasLocation" x="318" y="336"/>
         </scene>
         <!--Play Sounds View Controller-->
         <scene sceneID="dKd-ch-LRo">
@@ -119,12 +119,25 @@
                                     <action selector="playSlow:" destination="cfS-us-C6O" eventType="touchUpInside" id="6Bw-t4-dgh"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P22-Tj-CHy">
+                                <rect key="frame" x="34" y="321" width="105" height="105"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="105" id="IIL-e1-7KZ"/>
+                                    <constraint firstAttribute="width" constant="105" id="PUt-zi-1Vx"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="chipmunk"/>
+                                <connections>
+                                    <action selector="playChipmunkAudio:" destination="cfS-us-C6O" eventType="touchUpInside" id="TyX-gB-K7M"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="DUn-6I-T2b" secondAttribute="trailing" constant="14" id="1Wd-UJ-N6q"/>
+                            <constraint firstItem="077-rg-1cQ" firstAttribute="top" secondItem="P22-Tj-CHy" secondAttribute="bottom" constant="142" id="66a-2U-6ie"/>
                             <constraint firstItem="xrm-wC-w5J" firstAttribute="leading" secondItem="bKd-BC-NTo" secondAttribute="leadingMargin" constant="15" id="Eh2-SB-2I3"/>
                             <constraint firstItem="077-rg-1cQ" firstAttribute="top" secondItem="3gM-nV-osi" secondAttribute="bottom" constant="20" id="Yfm-za-1K0"/>
+                            <constraint firstItem="P22-Tj-CHy" firstAttribute="leading" secondItem="bKd-BC-NTo" secondAttribute="leadingMargin" constant="14" id="lP0-lm-lOt"/>
                             <constraint firstItem="DUn-6I-T2b" firstAttribute="top" secondItem="w1f-Ch-PQF" secondAttribute="bottom" constant="55" id="lsG-dK-z3P"/>
                             <constraint firstItem="3gM-nV-osi" firstAttribute="centerX" secondItem="bKd-BC-NTo" secondAttribute="centerX" id="mTx-5b-ZHf"/>
                             <constraint firstItem="xrm-wC-w5J" firstAttribute="top" secondItem="w1f-Ch-PQF" secondAttribute="bottom" constant="55" id="yOW-Js-nhe"/>
@@ -134,7 +147,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iva-Oz-wYe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="808" y="336"/>
+            <point key="canvasLocation" x="679" y="336"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Oky-OB-Sov">
@@ -156,6 +169,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="chipmunk" width="100" height="100"/>
         <image name="fast" width="100" height="100"/>
         <image name="microphone" width="100" height="100"/>
         <image name="slow" width="100" height="100"/>
