@@ -130,13 +130,26 @@
                                     <action selector="playChipmunkAudio:" destination="cfS-us-C6O" eventType="touchUpInside" id="TyX-gB-K7M"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aJj-02-Tml">
+                                <rect key="frame" x="181" y="321" width="105" height="105"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="105" id="vZ0-aC-SBs"/>
+                                    <constraint firstAttribute="width" constant="105" id="zud-h7-5si"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="darthvader@2x~iphone-3"/>
+                                <connections>
+                                    <action selector="playDarthVaderAudio:" destination="cfS-us-C6O" eventType="touchUpInside" id="56D-Ss-F4P"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="DUn-6I-T2b" secondAttribute="trailing" constant="14" id="1Wd-UJ-N6q"/>
                             <constraint firstItem="077-rg-1cQ" firstAttribute="top" secondItem="P22-Tj-CHy" secondAttribute="bottom" constant="142" id="66a-2U-6ie"/>
+                            <constraint firstItem="aJj-02-Tml" firstAttribute="leading" secondItem="P22-Tj-CHy" secondAttribute="trailing" constant="42" id="6k6-ok-ycV"/>
                             <constraint firstItem="xrm-wC-w5J" firstAttribute="leading" secondItem="bKd-BC-NTo" secondAttribute="leadingMargin" constant="15" id="Eh2-SB-2I3"/>
                             <constraint firstItem="077-rg-1cQ" firstAttribute="top" secondItem="3gM-nV-osi" secondAttribute="bottom" constant="20" id="Yfm-za-1K0"/>
+                            <constraint firstItem="aJj-02-Tml" firstAttribute="top" secondItem="DUn-6I-T2b" secondAttribute="bottom" constant="94" id="Zsl-9h-PeF"/>
                             <constraint firstItem="P22-Tj-CHy" firstAttribute="leading" secondItem="bKd-BC-NTo" secondAttribute="leadingMargin" constant="14" id="lP0-lm-lOt"/>
                             <constraint firstItem="DUn-6I-T2b" firstAttribute="top" secondItem="w1f-Ch-PQF" secondAttribute="bottom" constant="55" id="lsG-dK-z3P"/>
                             <constraint firstItem="3gM-nV-osi" firstAttribute="centerX" secondItem="bKd-BC-NTo" secondAttribute="centerX" id="mTx-5b-ZHf"/>
@@ -170,6 +183,7 @@
     </scenes>
     <resources>
         <image name="chipmunk" width="100" height="100"/>
+        <image name="darthvader@2x~iphone-3" width="100" height="100"/>
         <image name="fast" width="100" height="100"/>
         <image name="microphone" width="100" height="100"/>
         <image name="slow" width="100" height="100"/>
